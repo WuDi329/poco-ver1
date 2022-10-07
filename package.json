@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "prepare": "husky install",
+    "hook": "pnpm exec husky add .husky/commit-msg 'pnpm exec commitlint --edit $1'",
+    "commit": "pnpm exec cz",
+    "changelog": "pnpm exec conventional-changelog -p angular -i CHANGELOG.md -s"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "commitizen": "^4.2.5",
+    "conventional-changelog-cli": "^2.2.2",
+    "husky": "^8.0.1"
+  }
+}

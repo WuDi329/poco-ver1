@@ -1,0 +1,23 @@
+{
+  "name": "poco-net",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "rollup --config rollup.config.ts --watch",
+    "build": "rollup --config rollup.config.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "socket.io-client": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.18",
+    "@types/webrtc": "^0.0.32"
+  }
+}
